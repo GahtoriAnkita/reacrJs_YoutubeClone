@@ -17,27 +17,29 @@ const VideoDetails = () => {
 
     useEffect(() => {
         document.getElementById("root").classList.add("custom-h");
+        const fetchVideoDetails = () => {
+            setLoading(true);
+            fetchDataFromApi(`video/details/?id=${id}`).then((res) => {
+                console.log(res);
+                setVideo(res);
+                setLoading(false);
+            });
+        };
+    
+        const fetchRelatedVideos = () => {
+            setLoading(true);
+            fetchDataFromApi(`video/related-contents/?id=${id}`).then((res) => {
+                console.log(res);
+                setRelatedVideos(res);
+                setLoading(false);
+            });
+        };
+
         fetchVideoDetails();
         fetchRelatedVideos();
-    }, [id]);
+    }, [id, setLoading]);
 
-    const fetchVideoDetails = () => {
-        setLoading(true);
-        fetchDataFromApi(`video/details/?id=${id}`).then((res) => {
-            console.log(res);
-            setVideo(res);
-            setLoading(false);
-        });
-    };
-
-    const fetchRelatedVideos = () => {
-        setLoading(true);
-        fetchDataFromApi(`video/related-contents/?id=${id}`).then((res) => {
-            console.log(res);
-            setRelatedVideos(res);
-            setLoading(false);
-        });
-    };
+  
 
     return (
         <div className="flex justify-center flex-row h-[calc(100%-56px)] bg-black">
@@ -63,6 +65,7 @@ const VideoDetails = () => {
                                     <img
                                         className="h-full w-full object-cover"
                                         src={video?.author?.avatar[0]?.url}
+                                        alt="videoPhoto"
                                     />
                                 </div>
                             </div>
