@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reacrJs_YoutubeClone.git/static/css/main.0bf243da.css",
+    "main.js": "/reacrJs_YoutubeClone.git/static/js/main.9b55bc27.js",
+    "reactPlayerPreview.js": "/reacrJs_YoutubeClone.git/static/js/reactPlayerPreview.c7472170.chunk.js",
+    "static/media/yt-logo-mobile.png": "/reacrJs_YoutubeClone.git/static/media/yt-logo-mobile.7e67cd801ac3213983ff.png",
+    "static/media/yt-logo.png": "/reacrJs_YoutubeClone.git/static/media/yt-logo.d6505fbc930734374cea.png",
+    "index.html": "/reacrJs_YoutubeClone.git/index.html",
+    "main.0bf243da.css.map": "/reacrJs_YoutubeClone.git/static/css/main.0bf243da.css.map",
+    "main.9b55bc27.js.map": "/reacrJs_YoutubeClone.git/static/js/main.9b55bc27.js.map",
+    "reactPlayerPreview.c7472170.chunk.js.map": "/reacrJs_YoutubeClone.git/static/js/reactPlayerPreview.c7472170.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bf243da.css",
+    "static/js/main.9b55bc27.js"
+  ]
+}
